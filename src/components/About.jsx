@@ -65,7 +65,7 @@ export function About() {
               <div className="p-6 rounded-full bg-indigo-600/10 border border-indigo-400 text-indigo-300 text-4xl shadow-xl shadow-indigo-500/30 animate-heartbeat backdrop-blur-sm">
                 <Dna />
               </div>
-              <p className="mt-2 text-xs text-gray-300">Bioinformatics</p>
+              <p className="mt-2 text-xs text-gray-300">Research</p>
             </div>
           </div>
         </div>

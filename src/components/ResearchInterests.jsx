@@ -3,7 +3,6 @@ export function ResearchInterests() {
     "Large Language Models (LLMs)",
     "Emotion AI",    
     "Bioinformatics",
-    "Satellite AI",
     "Speech Processing",
     "Ethical AI",
     "AI in Healthcare",    

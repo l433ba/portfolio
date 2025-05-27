@@ -36,7 +36,7 @@ export function About() {
             Passionate about <span className="text-indigo-300">Artificial Intelligence</span>, <span className="text-indigo-300">Machine Learning</span>, and <span className="text-indigo-300">Full Stack Development</span>, I merge logic and creativity to design impactful solutions.
           </p>
           <p className="text-base md:text-lg text-gray-400 mt-4 leading-relaxed">
-            My mission? To decode problems — from bioinformatics to satellites — and build systems that drive innovation and human potential.
+            My mission? To decode problems and build systems that drive innovation and human potential.
           </p>
         </div>
 

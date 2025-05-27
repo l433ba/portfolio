@@ -23,15 +23,18 @@ export function Contact() {
               laeebajaved@gmail.com
             </a>
           </div>
-          <div className="px-6 py-4 bg-indigo-600/10 backdrop-blur-md border border-indigo-500/20 rounded-2xl shadow-lg hover:shadow-indigo-500/30 transition">
-            📞{" "}
-            <a
-              href="tel:+919068138222"
-              className="text-indigo-300 text-lg hover:underline"
-            >
-              +91 9068138222
-            </a>
-          </div>
+          {/*
+  <div className="px-6 py-4 bg-indigo-600/10 backdrop-blur-md border border-indigo-500/20 rounded-2xl shadow-lg hover:shadow-indigo-500/30 transition">
+    📞{" "}
+    <a
+      href="tel:+919068138222"
+      className="text-indigo-300 text-lg hover:underline"
+    >
+      +91 9068138222
+    </a>
+  </div>
+*/}
+
 
           <div className="flex justify-center space-x-8 pt-6">
             <a

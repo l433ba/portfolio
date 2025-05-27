@@ -1,41 +1,68 @@
-// src/components/Volunteering.jsx
 export function Volunteering() {
+  const events = [
+    {
+      title: "Mentor – Computer Science Society",
+      period: "Sep 2024 – Apr 2025",
+      points: [
+        "Guided leadership team to ensure smooth transitions.",
+        "Mentored core team in leadership and technical skills.",
+        "Organized AMUHACKS 4.0: hackathon, coding, quiz competition & Capture the Flag [CTF]- an Online Treasure Hunt.",
+      ],
+    },
+    {
+      title: "Secretary – Computer Science Society",
+      period: "Jul 2023 – Jun 2024",
+      points: [
+        "Organized CodeHawk, CS360, and GFG One Month Coding Challenge.",
+      ],
+    },
+    {
+      title: "GDSC Lead – Google Developer Student Clubs AMU",
+      period: "Jul 2023 – Jun 2024",
+      points: [
+        "Organized AMUHACKS 3.0: coding & treasure hunt hackathon.",
+        "Conducted sessions on Google Cloud, web/app development.",
+        "Led Google Cloud Study Jams with hands-on projects.",
+      ],
+    },
+  ];
+
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white" id="volunteering" data-aos="fade-up">
+    <section
+      className="py-24 px-6 bg-gradient-to-b from-transparent via-gray-900 to-black text-white"
+      id="volunteering"
+      data-aos="fade-up"
+    >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-10 text-center border-b-4 inline-block border-indigo-500">Volunteering</h2>
+        <h2 className="text-4xl font-bold mb-14 text-center border-b-4 inline-block border-indigo-500">
+          Volunteering
+        </h2>
 
-        <div className="space-y-10">
-          <div className="border-l-4 border-indigo-500 pl-6 relative">
-            <span className="absolute left-[-9px] top-1 w-4 h-4 bg-indigo-500 rounded-full"></span>
-            <h3 className="text-xl font-semibold text-indigo-300">Mentor – Computer Science Society</h3>
-            <p className="text-gray-400">Sep 2024 – Apr 2025</p>
-            <ul className="list-disc list-inside mt-2 text-gray-300">
-              <li>Guided leadership team to ensure smooth transitions.</li>
-              <li>Mentored core team in leadership and technical skills.</li>
-              <li>Organized AMUHACKS 5.0: hackathon, coding & quiz competitions.</li>
-            </ul>
-          </div>
+        <div className="relative border-l border-indigo-500/20 ml-4 pl-6 space-y-16">
+          {events.map((event, idx) => (
+            <div
+              key={idx}
+              className="relative group"
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+            >
+              {/* Glowing dot */}
+              <div className="absolute -left-[22px] top-1 w-4 h-4 bg-indigo-500 rounded-full shadow-md shadow-indigo-500/30"></div>
 
-          <div className="border-l-4 border-indigo-500 pl-6 relative">
-            <span className="absolute left-[-9px] top-1 w-4 h-4 bg-indigo-500 rounded-full"></span>
-            <h3 className="text-xl font-semibold text-indigo-300">Secretary – Computer Science Society</h3>
-            <p className="text-gray-400">Jul 2023 – Jun 2024</p>
-            <ul className="list-disc list-inside mt-2 text-gray-300">
-              <li>Organized CodeHawk, CS360, and GFG One Month Coding Challenge.</li>
-            </ul>
-          </div>
+              {/* Animated neural line glow */}
+              <div className="absolute -left-[1.35rem] h-full w-[2px] bg-gradient-to-b from-indigo-500/30 to-transparent animate-pulse blur-sm" />
 
-          <div className="border-l-4 border-indigo-500 pl-6 relative">
-            <span className="absolute left-[-9px] top-1 w-4 h-4 bg-indigo-500 rounded-full"></span>
-            <h3 className="text-xl font-semibold text-indigo-300">GDSC Lead – Google Developer Student Clubs AMU</h3>
-            <p className="text-gray-400">Jul 2023 – Jun 2024</p>
-            <ul className="list-disc list-inside mt-2 text-gray-300">
-              <li>Organized AMUHACKS 3.0: coding & treasure hunt hackathon.</li>
-              <li>Conducted sessions on Google Cloud, web/app development.</li>
-              <li>Led Google Cloud Study Jams with hands-on projects.</li>
-            </ul>
-          </div>
+              <h3 className="text-xl font-semibold text-indigo-300">
+                {event.title}
+              </h3>
+              <p className="text-sm text-gray-400">{event.period}</p>
+              <ul className="list-disc list-inside mt-3 text-sm text-gray-300 space-y-1">
+                {event.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>

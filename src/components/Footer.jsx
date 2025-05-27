@@ -1,9 +1,11 @@
-// src/components/Footer.jsx
 export function Footer() {
   return (
-    <footer className="bg-black text-gray-400 text-sm py-6 text-center border-t border-indigo-800">
+    <footer className="bg-black text-center text-sm text-gray-400 pt-10 pb-6 relative">
+      {/* Glowing top border effect */}
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-indigo-600 via-indigo-400 to-indigo-600 blur-sm opacity-40"></div>
+
       <p>&copy; {new Date().getFullYear()} Laeeba Javed. All rights reserved.</p>
-      <p className="text-xs text-gray-600 mt-1">Made with ❤️ using React + Tailwind CSS</p>
+      
     </footer>
   );
 }

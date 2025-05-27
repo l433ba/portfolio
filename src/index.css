@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global Background */
+body {
+  background: transparent;
+}
+
+/* Icon & Background Animations */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+/* Soft Float + Bounce */
+@keyframes float-bounce {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-8px) scale(1.05); }
+}
+.animate-float-bounce {
+  animation: float-bounce 3.5s ease-in-out infinite;
+}
+
+/* Heartbeat Pulse */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(0.95); }
+  75% { transform: scale(1.05); }
+}
+.animate-heartbeat {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+/* Elegant Bubble Float - Varying Speeds */
+@keyframes classy-float-1 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.animate-classy-float-1 {
+  animation: classy-float-1 5.2s ease-in-out infinite;
+}
+
+@keyframes classy-float-2 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+.animate-classy-float-2 {
+  animation: classy-float-2 6s ease-in-out infinite;
+}
+
+@keyframes classy-float-3 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-9px); }
+}
+.animate-classy-float-3 {
+  animation: classy-float-3 5.8s ease-in-out infinite;
+}
+
+/* Floating Tags */
+@keyframes floating-tag {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+.animate-floating-tag {
+  animation: floating-tag 5.5s ease-in-out infinite;
+}

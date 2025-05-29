@@ -2,7 +2,6 @@ export function ResearchInterests() {
   const topics = [
     "Large Language Models (LLMs)",
     "Emotion AI",    
-    "Bioinformatics",
     "Speech Processing",
     "Ethical AI",
     "AI in Healthcare",    

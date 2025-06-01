@@ -4,19 +4,19 @@ export function Publications() {
       title: "IEEE Intelligent Systems (2024)",
       subtitle: "Are Foundation Models the Next-Gen Social Media Moderators?",
       doi: "https://doi.org/10.1109/MIS.2024.3477109",
-      tags: ["Impact Factor: 6.744", "h-index: 87"],
+      tags: ["Impact Factor: 6.744"],
     },
     {
       title: "Cognitive Computation (2024)",
       subtitle: "Vision-Enabled LLMs for Emotion Recognition",
       doi: "https://doi.org/10.1007/s12559-024-10281-5",
-      tags: ["Impact Factor: 5.600", "h-index: 73"],
+      tags: ["Impact Factor: 5.600"],
     },
     {
       title: "arXiv (2025)",
       subtitle: "Direct Speech to Speech Translation: A Review",
       doi: "https://doi.org/10.48550/arXiv.2503.04799",
-      tags: ["Preprint Repository", "h-index: N/A"],
+      tags: ["Preprint Repository"],
     },
   ];
 
